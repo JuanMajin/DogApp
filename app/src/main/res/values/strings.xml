@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">DogApp</string>
+    <string name="Cd_huella"> Ingresar con Huella digital</string>
     <string name="titulo_nueva_cita">Nueva Cita</string>
     <string name="hint_nombre_mascota">Nombre de la mascota</string>
     <string name="hint_raza">Raza</string>
@@ -17,4 +18,6 @@
         <item>Tiene garrapatas</item>
         <item>Bota demasiado pelo</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

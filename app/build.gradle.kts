@@ -5,9 +5,7 @@ plugins {
 android {
     namespace = "cl.tuapp.dogapp"
     compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
+        version = release(37)
     }
 
     defaultConfig {
@@ -55,6 +53,7 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+    implementation("com.airbnb.android:lottie:6.6.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
