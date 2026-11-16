@@ -9,6 +9,14 @@
     <string name="btn_guardar_cita">Guardar Cita</string>
     <string name="error_selecciona_sintoma">Selecciona un síntoma</string>
 
+    <!-- TODO: de biometria  -->
+    <string name="biometria_titulo">Autenticación con Biometría</string>
+    <string name="biometria_subtitulo">Ingrese su huella digital</string>
+    <string name="biometria_cancelar">Cancelar</string>
+    <string name="biometria_sin_sensor">Este dispositivo no tiene lector de huella</string>
+    <string name="biometria_no_disponible">El lector de huella no está disponible</string>
+    <string name="biometria_sin_huellas">Registra una huella en los ajustes del celular</string>
+
     <string-array name="lista_sintomas">
         <item>Síntomas</item>
         <item>Solo duerme</item>
