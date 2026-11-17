@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivMascota"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/cd_imagen_mascota"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ImagenCircular"
+                tools:src="@drawable/img_perro" />
+
+            <TextView
+                android:id="@+id/tvTurno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="#1" />
+
+            <TextView
+                android:id="@+id/tvNombreMascota"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvSintoma"
+                app:layout_constraintEnd_toStartOf="@id/tvTurno"
+                app:layout_constraintStart_toEndOf="@id/ivMascota"
+                app:layout_constraintTop_toTopOf="@id/ivMascota"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="Firulais" />
+
+            <TextView
+                android:id="@+id/tvSintoma"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/gray_hint"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivMascota"
+                app:layout_constraintEnd_toEndOf="@id/tvNombreMascota"
+                app:layout_constraintStart_toStartOf="@id/tvNombreMascota"
+                app:layout_constraintTop_toBottomOf="@id/tvNombreMascota"
+                tools:text="No come" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

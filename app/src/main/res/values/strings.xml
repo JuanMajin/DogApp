@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">DogApp</string>
     <string name="Cd_huella"> Ingresar con Huella digital</string>
+    <string name="home_titulo">Administrador de Citas</string>
+    <string name="cd_imagen_mascota">Foto de la mascota</string>
     <string name="titulo_nueva_cita">Nueva Cita</string>
     <string name="hint_nombre_mascota">Nombre de la mascota</string>
     <string name="hint_raza">Raza</string>
@@ -8,6 +10,7 @@
     <string name="hint_telefono">Teléfono</string>
     <string name="btn_guardar_cita">Guardar Cita</string>
     <string name="error_selecciona_sintoma">Selecciona un síntoma</string>
+
 
     <!-- TODO: de biometria  -->
     <string name="biometria_titulo">Autenticación con Biometría</string>
