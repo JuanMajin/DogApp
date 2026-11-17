@@ -31,7 +31,7 @@
             android:fontFamily="@font/dogapp_font"
             android:text="@string/app_name"
             android:textColor="@color/white"
-            android:textSize="60dp"
+            android:textSize="60sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/ivPerro"
             app:layout_constraintHorizontal_bias="0.278"
@@ -54,10 +54,6 @@
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/fingerprint" />
-
-
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
