@@ -7,4 +7,5 @@
     <color name="pink_disabled">#F59AA0</color>
     <color name="purple_focus">#6200EE</color>
     <color name="gray_hint">#757575</color>
+    <color name="dark_gray">#2B2B2B</color>
 </resources>
