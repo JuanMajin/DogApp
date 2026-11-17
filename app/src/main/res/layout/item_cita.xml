@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    HU 2.0 - Criterio 3: ítem de la lista.
+    Tarjeta blanca con bordes redondeados y elevación; imagen circular a la izquierda;
+    nombre de la mascota y síntoma en el centro; turno (ID de Room) arriba a la derecha.
+-->
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">

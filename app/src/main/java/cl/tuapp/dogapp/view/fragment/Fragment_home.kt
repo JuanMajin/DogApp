@@ -15,7 +15,7 @@ import cl.tuapp.dogapp.view.adapter.CitaAdapter
 import cl.tuapp.dogapp.viewmodel.CitaViewModel
 
 
-
+/** HU 2.0 - Home Administrador de Citas (SCRUM-6) */
 class Fragment_home : Fragment() {
     private lateinit var binding: FragmentHomeBinding
     private val citaViewModel: CitaViewModel by viewModels()

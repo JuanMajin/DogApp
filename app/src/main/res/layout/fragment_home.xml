@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    HU 2.0 - Home Administrador de Citas (SCRUM-6)
+    Criterio 2: fondo blanco, header gris oscuro con la esquina inferior izquierda curva,
+                título "Administrador de Citas" a la izquierda y perro + "DogApp" a la derecha.
+    Criterio 3: lista de citas (cada ítem está en item_cita.xml).
+    Criterio 4: botón flotante rosado #F05861 abajo a la derecha.
+-->
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">

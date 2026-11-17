@@ -3,6 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--
+    HU 1.0 - Ventana Login (SCRUM-5)
+    Criterio 1: fondo gris oscuro, sin toolbar (el tema de la app es NoActionBar).
+    Criterio 2: cabeza de perro arriba a la derecha, PNG transparente, tamaño en % de pantalla.
+    Criterio 3: título "DogApp" blanco, bold, fuente externa, centrado debajo de la imagen.
+    Criterio 4: animación Lottie de huella abajo en el centro.
+-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layoutLogin"
         android:layout_width="match_parent"
@@ -10,6 +18,8 @@
         android:background="@color/dark_gray"
         tools:context=".view.fragment.LoginFragment">
 
+        <!-- Criterio 2: imagen del perro. El ancho es el 45 % de la pantalla
+                para que se adapte a distintos tamaños sin deformarse. -->
         <ImageView
             android:id="@+id/ivPerro"
             android:layout_width="wrap_content"
@@ -22,6 +32,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.45" />
+
+        <!-- Criterio 3: título DogApp centrado debajo de la imagen. -->
 
         <TextView
             android:id="@+id/tvTitulo"
@@ -37,6 +49,9 @@
             app:layout_constraintHorizontal_bias="0.278"
             app:layout_constraintStart_toStartOf="@id/ivPerro"
             app:layout_constraintTop_toBottomOf="@id/ivPerro" />
+
+        <!-- Criterio 4: huella dinámica (Lottie) abajo en el centro.
+         Al tocarla se abre el BiometricPrompt (criterio 5, en la lógica). -->
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lottieHuella"
