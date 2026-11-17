@@ -14,7 +14,11 @@ import androidx.navigation.fragment.findNavController
 import cl.tuapp.dogapp.R
 import cl.tuapp.dogapp.databinding.FragmentLoginBinding
 
-
+/**
+ * HU 1.0 - Ventana Login (SCRUM-5)
+ * Criterio 5: al tocar la huella se abre la ventana "Autenticación con Biometría".
+ * Criterio 6: huella correcta -> Home (HU 2.0); incorrecta -> error del dispositivo, no entra.
+ */
 class Fragment_login : Fragment() {
     private lateinit var binding: FragmentLoginBinding
     private lateinit var biometricPrompt: BiometricPrompt
@@ -35,6 +39,7 @@ class Fragment_login : Fragment() {
         configurarBiometria()
     }
 
+    // Eventos de la vista
     private fun controladores(){
         binding.lottieHuella.setOnClickListener {
             if (puedeUsarHuella()){
@@ -42,6 +47,8 @@ class Fragment_login : Fragment() {
             }
         }
     }
+
+    // Criterio 5: ventana emergente con título, subtítulo y botón "Cancelar"
     private fun configurarBiometria() {
         val executor = ContextCompat.getMainExecutor(requireContext())
 
@@ -76,6 +83,7 @@ class Fragment_login : Fragment() {
             .setAllowedAuthenticators(BIOMETRIC_STRONG)
             .build()
     }
+    // Revisa que el celular tenga sensor y al menos una huella registrada
     private fun puedeUsarHuella(): Boolean {
         val mensaje = when (BiometricManager.from(requireContext()).canAuthenticate(BIOMETRIC_STRONG)) {
             BiometricManager.BIOMETRIC_SUCCESS -> return true
@@ -88,6 +96,9 @@ class Fragment_login : Fragment() {
         return false
 
         }
+
+    // Navega al Home quitando el login de la pila (ver nav_graph: popUpTo inclusive),
+    // así el botón atrás del Home cierra la app en vez de volver al login (HU 2.0, criterio 1).
     private fun irAlHome() {
         findNavController().navigate(R.id.action_fragment_login_to_fragment_home)
     }
