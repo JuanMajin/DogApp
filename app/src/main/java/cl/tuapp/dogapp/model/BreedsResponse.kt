@@ -1,4 +1,10 @@
 package cl.tuapp.dogapp.model
 
-class BreedsResponse {
-}
+import com.google.gson.annotations.SerializedName
+
+data class BreedsResponse(
+    @SerializedName("message")
+    val message: Map<String, List<String>>,
+    @SerializedName("status")
+    val status: String
+)
