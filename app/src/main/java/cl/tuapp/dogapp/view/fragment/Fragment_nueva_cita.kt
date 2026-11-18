@@ -60,7 +60,7 @@ class Fragment_nueva_cita : Fragment() {
             val habilitar = mascotaOk && razaOk && propietarioOk && telefonoOk
             binding.btnGuardarCita.isEnabled = habilitar
 
-            val colorTexto = if (habilitar) R.color.white else R.color.gray_hint
+            val colorTexto = if (habilitar) R.color.white else R.color.black
             binding.btnGuardarCita.setTextColor(
                 ContextCompat.getColor(requireContext(), colorTexto)
             )
@@ -99,7 +99,7 @@ class Fragment_nueva_cita : Fragment() {
         }
 
         binding.btnGuardarCita.setOnClickListener {
-            val sintomaSeleccionado = binding.spSintomas.selectedItem.toString()
+            val sintomaSeleccionado = binding.spSintomas.selectedItem?.toString() ?: "Síntomas"
             if (sintomaSeleccionado == "Síntomas") {
                 Toast.makeText(
                     requireContext(),

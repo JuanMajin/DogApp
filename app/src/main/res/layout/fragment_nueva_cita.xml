@@ -69,6 +69,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_nombre_mascota"
+                    android:textColorHint="@color/gray_hint"
                     app:boxStrokeColor="@color/purple_focus"
                     app:hintTextColor="@color/purple_focus">
 
@@ -87,6 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:hint="@string/hint_raza"
+                    android:textColorHint="@color/gray_hint"
                     app:boxStrokeColor="@color/purple_focus"
                     app:hintTextColor="@color/purple_focus">
 
@@ -106,6 +108,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:hint="@string/hint_nombre_propietario"
+                    android:textColorHint="@color/gray_hint"
                     app:boxStrokeColor="@color/purple_focus"
                     app:hintTextColor="@color/purple_focus">
 
@@ -124,6 +127,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:hint="@string/hint_telefono"
+                    android:textColorHint="@color/gray_hint"
                     app:boxStrokeColor="@color/purple_focus"
                     app:hintTextColor="@color/purple_focus">
 
@@ -152,7 +156,7 @@
                     android:paddingHorizontal="28dp"
                     android:text="@string/btn_guardar_cita"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:backgroundTint="@color/pink_primary"
