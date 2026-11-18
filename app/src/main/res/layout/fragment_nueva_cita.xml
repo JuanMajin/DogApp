@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        tools:context=".view.fragment.NuevaCitaFragment">
+        tools:context=".view.fragment.Fragment_nueva_cita">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/toolbarNuevaCita"
