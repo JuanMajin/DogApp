@@ -29,6 +29,8 @@
         <item>Tiene garrapatas</item>
         <item>Bota demasiado pelo</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="regresar">Regresar</string>
+    <string name="eliminar_cita">Eliminar Cita</string>
+    <string name="editar_cita">Editar Cita</string>
 </resources>
